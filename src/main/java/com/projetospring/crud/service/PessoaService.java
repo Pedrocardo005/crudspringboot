@@ -24,4 +24,12 @@ public class PessoaService {
     public void deletar (String cpf) {
         pessoaRepository.deletar(cpf);
     }
+
+    public Pessoa findByCpf (String cpf) {
+        return pessoaRepository.findByCpf(cpf);
+    }
+
+    public Pessoa update (Pessoa pessoa) {
+        return pessoaRepository.update(pessoa);
+    }
 }
