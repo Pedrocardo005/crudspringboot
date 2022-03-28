@@ -9,18 +9,7 @@ public class Pessoa {
     private Character sexo;
 
     public Pessoa(){
-        
-    }
 
-    public Pessoa(String nome, String cpf) {
-        this.nome = nome;
-        this.cpf = cpf;
-    }
-
-    public Pessoa(String nome, String cpf, Character sexo) {
-        this.nome = nome;
-        this.cpf = cpf;
-        this.sexo = sexo;
     }
 
     public Character getSexo() {

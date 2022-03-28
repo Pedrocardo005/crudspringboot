@@ -17,4 +17,13 @@ public class PessoaRepository {
     public ArrayList<Pessoa> findAll() {
         return this.pessoas;
     }
+
+    public void deletar(String cpf) {
+        for (int i = 0; i < pessoas.size(); i++) {
+            Pessoa pessoa = pessoas.get(i);
+            if(pessoa.getCpf().equals(cpf)) {
+                pessoas.remove(i);
+            }
+        }
+    }
 }

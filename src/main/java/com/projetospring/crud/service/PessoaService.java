@@ -20,4 +20,8 @@ public class PessoaService {
     public ArrayList<Pessoa> findAll() {
         return pessoaRepository.findAll();
     }
+
+    public void deletar (String cpf) {
+        pessoaRepository.deletar(cpf);
+    }
 }
