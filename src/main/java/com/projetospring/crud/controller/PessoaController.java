@@ -29,7 +29,7 @@ public class PessoaController {
     }
 
     @PostMapping("/cadastrar")
-    public ResponseEntity<String> cadastrarPessoa(@RequestBody Pessoa pessoa){
+    public ResponseEntity<String> cadastrarPessoa(Pessoa pessoa){
         pessoaService.cadastrarPessoa(pessoa);
         return new ResponseEntity<String>("Criado", HttpStatus.CREATED);
     }

@@ -25,4 +25,34 @@ $(document).ready(function () {
     }
 
     inicial();
+
+    $(".main-form").on("submit", function (event) {
+        var data, nome, cpf, sexo;
+        
+        event.preventDefault();
+
+        nome = $("#nome").val();
+        cpf = $("#cpf").val();
+        sexo = $("#sexo").val();
+
+        data = {
+            nome: nome,
+            cpf: cpf,
+            sexo: sexo
+        }
+
+        $.ajax({
+            url: "/pessoa/cadastrar",
+            method: "POST",
+            data: data,
+            success: function (response) {
+                alert("Inserido com sucesso!");
+                $("tbody").empty();
+                inicial();
+            },
+            error: function (response) {
+                alert("Erro ao inserir o cliente");
+            }
+        });
+    });
 });
