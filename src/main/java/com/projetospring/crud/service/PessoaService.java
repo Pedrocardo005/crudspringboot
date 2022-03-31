@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Optional;
 
 import com.projetospring.crud.models.Pessoa;
-import com.projetospring.crud.repository.PessoaRepository;
 import com.projetospring.crud.repository.PessoaRepository2;
 
 import org.springframework.beans.factory.annotation.Autowired;
