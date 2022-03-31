@@ -7,6 +7,7 @@ import com.projetospring.crud.models.Pessoa;
 import org.springframework.stereotype.Repository;
 
 @Repository
+@Deprecated
 public class PessoaRepository {
     private ArrayList<Pessoa> pessoas = new ArrayList<Pessoa>();
 

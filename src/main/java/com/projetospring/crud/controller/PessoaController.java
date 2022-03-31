@@ -59,8 +59,14 @@ public class PessoaController {
 
     @PutMapping("/atualizar")
     public ResponseEntity<Pessoa> update(Pessoa pessoa) {
-        Pessoa p = pessoaService.update(pessoa);
-        return new ResponseEntity<Pessoa>(p, HttpStatus.OK);
+
+        try {
+            pessoaService.update(pessoa);
+            return new ResponseEntity<Pessoa>(pessoa, HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<Pessoa>(pessoa, HttpStatus.UNPROCESSABLE_ENTITY);
+        }
+        
     }
     
 }
