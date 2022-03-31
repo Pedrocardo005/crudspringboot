@@ -1,6 +1,22 @@
+.main {
+    margin-top: 50px;
+}
+
+.table {
+    width: 40%;
+    float: left;
+}
+
+table, th, td {
+    border: 1px groove;
+    border-collapse: collapse;
+}
+
 .main-form {
-    width: 500px;
-    margin: 20px auto;
+    width: 30%;
+    float: right;
+    border: 1px groove;
+    border-radius: 5px;
 }
 
 .form-button {
