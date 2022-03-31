@@ -19,7 +19,7 @@ $(document).ready(function (){
             data:data,
             success: function (response){
                 alert("Atualizado com sucesso!");
-                console.log(response);
+                window.location.href = "/";
             },
             error: function () {
                 alert("Houve algum erro!")

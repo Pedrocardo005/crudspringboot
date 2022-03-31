@@ -54,8 +54,6 @@ public class PessoaController {
             model.addAttribute("nome", pessoa.getNome());
             model.addAttribute("cpf", pessoa.getCpf());
             model.addAttribute("sexo", pessoa.getSexo());
-            model.addAttribute("masculino", "M");
-            model.addAttribute("feminino", "F");
             return new ModelAndView("atualizar");
     }
 
