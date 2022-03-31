@@ -43,6 +43,7 @@ $(document).ready(function () {
                                 inicial();
                             },
                             error: function (response) {
+                                alert("Erro ao tentar deletar o usuário");
                                 console.error(response);
                             }
                         });
