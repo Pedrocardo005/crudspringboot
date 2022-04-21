@@ -19,6 +19,11 @@ docker volume create --name volume-mysql
 docker run --name banco-mysql -v volume-mysql:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=password -d -p 3306:3306 mysql
 ```
 
+### Entre no container do banco de dados
+```bash
+docker exec -it banco-mysql bash
+```
+
 ### Entre no banco de dados
 ```bash
 mysql -p
@@ -28,5 +33,5 @@ mysql -p
 ```bash
 CREATE DATABASE banco;
 USE banco;
-create table \`pessoa\` (\`id\` int unsigned not null auto_increment primary key, \`nome\` VARCHAR(255) null, \`cpf\` varchar(255) null, \`sexo\` CHAR(1) null);
+create table `pessoa` (`id` int unsigned not null auto_increment primary key, `nome` VARCHAR(255) null, `cpf` varchar(255) null, `sexo` CHAR(1) null);
 ```
