@@ -7,6 +7,7 @@ services:
       - "db:/var/lib/mysql"
     expose:
       - 3306
+    container_name: crud-mysql-1
     
   web:
     build:
