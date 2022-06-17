@@ -1,0 +1,6 @@
+FROM mysql:8.0.28
+
+ENV MYSQL_ROOT_PASSWORD=password
+
+# pasta que roda scripts automaticamente quando o container é criado
+COPY tables.sql /docker-entrypoint-initdb.d
