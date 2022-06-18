@@ -13,3 +13,8 @@ git clone https://github.com/Pedrocardo005/crudspringboot
 ```bash
 ./run.sh
 ```
+
+ou se preferir rode o comando:
+```bash
+docker-compose -f docker-compose.yml up -d
+```
